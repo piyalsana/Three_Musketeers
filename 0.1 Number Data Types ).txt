@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int a=2147483647;//2^31 -1,10^9.331929865381
+    short int b=32767 ;//2^15-1,10^4.515436681
+    long int c=2147483647 ;//2^31-1,10^9.331929865381
+    long long int d=pow(2,62)-1;//10^18.6638597311
+    unsigned int e=4294967295;//2^32-1,10^9.632959861
+    unsigned long int f=4294967295;//2^32-1,10^9.632959861
+    unsigned long long int g=18446744073709551615;//10^19.265919722
+    printf(" int require size %zu\n", sizeof(a));
+    printf(" short int require size %zu\n", sizeof(b));
+    printf(" long int require size %zu\n", sizeof(c));
+    printf(" long long int require size %zu\n", sizeof(d));
+    printf(" unsigned int require size %zu\n", sizeof(e));
+    printf(" unsigned long int require size %zu\n", sizeof(f));
+    printf(" unsigned long long int require size %zu\n\n\n", sizeof(g));
+
+
+    
+    printf(" int can hold upto %d\n",a);
+    printf(" short int can hold upto %hd\n",b);
+    printf(" long int can hold upto %ld\n",c);
+    printf(" long long int can hold upto %lld\n", d);
+    printf(" unsigned int can hold upto %u\n", e);
+    printf(" unsigned long int can hold upto %lu\n",f);
+    printf(" unsigned long long int can hold upto %llu\n\n\n",g);
+    
+    
+    float h=12312412;
+    double i=1328398257392812;
+    long double j=3509328593850935012;
+    
+    printf(" float require size %zu\n", sizeof(h));
+    printf(" double require size %zu\n", sizeof(i));
+    printf(" long double require size %zu\n\n\n", sizeof(j));
+    
+    printf(" float can hold upto %f\n",h);
+    printf(" double can hold upto %lf\n",i);
+    printf(" long double can hold upto %Lf\n",j);
+    
+    
+
+
+
+
+    return(0);
+
+
+}
